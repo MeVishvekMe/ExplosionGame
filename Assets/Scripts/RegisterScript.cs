@@ -1,14 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class RegisterScript : MonoBehaviour {
 
-    public InputField usernameField;
-    public InputField passwordField;
+    public TMP_InputField usernameField;
+    public TMP_InputField passwordField;
     public Button registerButton;
 
     public void callRegister() {
@@ -16,7 +17,10 @@ public class RegisterScript : MonoBehaviour {
     }
 
     IEnumerator register() {
-        WWW www = new WWW("http://localhost/DBconnect/register.php");
+        WWWForm form = new WWWForm();
+        form.AddField("name", usernameField.text);
+        form.AddField("password", passwordField.text);
+        WWW www = new WWW("http://localhost/DBconnect/register.php", form);
         yield return www;
         if (www.text == "0") {
             Debug.Log("User created successfully");
