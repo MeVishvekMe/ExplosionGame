@@ -561,7 +561,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2052314239}
+        m_TargetAssemblyTypeName: RegisterScript, Assembly-CSharp
+        m_MethodName: verifyInputs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -937,7 +949,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 748991580}
   m_OnClick:
     m_PersistentCalls:
@@ -1942,7 +1954,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2052314239}
+        m_TargetAssemblyTypeName: RegisterScript, Assembly-CSharp
+        m_MethodName: verifyInputs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2225,9 +2249,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf1e1aac139352479197107cc065f00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  usernameField: {fileID: 0}
-  passwordField: {fileID: 0}
-  registerButton: {fileID: 0}
+  usernameField: {fileID: 1781605375}
+  passwordField: {fileID: 553611286}
+  registerButton: {fileID: 748991579}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
