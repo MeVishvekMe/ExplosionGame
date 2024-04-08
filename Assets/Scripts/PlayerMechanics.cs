@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -29,6 +30,8 @@ public class PlayerMechanics : MonoBehaviour {
     public static int score = 0;
     public static float health = 100;
     public Slider healthSlider;
+
+    
 
     private float time = 0f;
     private void Start() {
@@ -67,6 +70,14 @@ public class PlayerMechanics : MonoBehaviour {
             _animator.Play("SwordSlashAnimation");
         }
         scoreText.text = "Score : " + score;
+
+        if (health <= 0) {
+            if (score > DBManager.newHighScore) {
+                DBManager.shouldChange = true;
+                DBManager.newHighScore = score;
+                SceneManager.LoadScene(1);
+            }
+        }
 
     }
 
