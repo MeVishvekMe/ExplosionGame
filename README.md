@@ -1,2 +1,2 @@
-# Unity-Projects
-Contains all the source code and builds of my Unity projects.
+# Explosion Game
+Contains all the source code for this game.
