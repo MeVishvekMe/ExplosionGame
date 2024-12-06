@@ -1,2 +1,2 @@
 # Explosion Game
-Contains all the source code for this game.
+Source code for this game.
